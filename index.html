@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/style.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js" integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ==" crossorigin="anonymous"></script>
@@ -13,6 +13,8 @@
     </head>
     <body>
         <div id="root">
+
+            <!-- Top Contacts Bar -->
             <div id="contact-bar">
                 <div class="container">
                     <div class="open-hours">
@@ -28,7 +30,63 @@
                         </div>
                     </div>
                 </div>
+
             </div>
+
+            <!-- Jumbotron -->
+            <section id="jumbotron">
+
+                <!-- Navbar -->
+                <div class="navbar uppercase">
+                    <div class="container">
+
+                        <!-- NexGen -->
+                        <div class="left-navbar">
+                            <div class="nex">
+                                <span>Nex</span>
+                            </div>
+                            <div class="gen">
+                                <span class="gen">Gen</span>
+                            </div>
+                        </div>
+
+                        <!-- Right Navbar -->
+                        <div class="right-navbar">
+                            <!-- Navbar -->
+                            <ul class="nav">
+                                <li v-for="(item, i) in navbar_items" :class="current_navbar_index == i ? 'green-text' : '' " @click="navbar_select(i)">{{item}}</li>
+                            </ul>
+
+                            <!-- Login and Get in touch -->
+                            <div class="get-in-touch">
+                                <span><i class="far fa-user"></i></span>
+                                <button type="button" name="button" class="button green-button">Get in Touch</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Sezione centrale jumbotron -->
+                <div class="main-section">
+                    <div class="container">
+                        <div class="get-more-productivity">
+                            <h4 class="uppercase green-text">Human Resurces</h4>
+                            <h1 >Get More Productivity</h1>
+                            <p>Planning, recruitment and selection process and performance evaluation of emplyees.</p>
+                            <div class="buttons-container">
+                                <button type="button" name="button" class="button green-button">Get in Touch</button>
+                                <button type="button" name="button" class="button">Read More</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
         </div>
         <script src="assets/main.js" charset="utf-8"></script>
     </body>
