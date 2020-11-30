@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    outline: none;
 }
 
 /* Colors
@@ -39,6 +40,7 @@
 .white-text{
     color: white;
 }
+
 .button{
     text-transform: uppercase;
     padding: 0 25px;
@@ -48,7 +50,7 @@
     font-size: 16px;
     border: 1px solid #1a948f;
     background: none;
-    color: white;
+    cursor: pointer;
 }
 
 .green-button{
@@ -114,7 +116,7 @@
 }
 
 #jumbotron .navbar .container{
-    height: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -130,6 +132,7 @@
     font-size: 20px;
     letter-spacing: 3px;
 }
+
 #jumbotron .navbar .container .left-navbar .nex{
     height: 100%;
     display: flex;
@@ -189,6 +192,23 @@
     margin: 10px 0 25px 0;
 }
 
+#jumbotron .main-section .container .get-more-productivity h1 span{
+    position: relative;
+}
+
+#jumbotron .main-section .container .get-more-productivity h1 span::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 38%;
+    background-color: rgba(3,132,131, 0.5);
+    border-radius: 5px;
+    position: absolute;
+    top: 52%;
+    left: 2px;
+    z-index: -1;
+}
+
 #jumbotron .main-section .container .get-more-productivity p{
     font-size: 24px;
     opacity: 0.8;
@@ -201,9 +221,97 @@
 }
 
 
+/************************************* Card Section */
+#cards{
+    height: 605px;
+    background-color: #eef4ed;
+}
+
+#cards .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cards .container .card{
+    height: 315px;
+    width: 360px;
+    padding: 45px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+#cards .container .card .icon-container{
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: rgb(218, 236, 237);
+    color: #1a948f;
+    display: flex;
+    font-size: 28px;
+}
+
+#cards .container .card .icon-container i{
+    margin: auto;
+}
+
+#cards .container .card h2{
+    color: rgb(33,51,52);
+}
+
+#cards .container .card p{
+    line-height: 25px;
+    font-weight: 400;
+    color: grey;
+}
+
+/************************************* The company*/
+#the-company{
+    height: 770px;
+}
+
+#the-company .container{
+    width: 80%;
+    margin: 0;
+    margin-left: auto;
+    display: flex;
+}
+
+#the-company .container .about-the-network{
+    width: 38%;
+    height: 100%;
+    display: flex;
+}
+
+#the-company .container .about-the-network .infos{
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#the-company .container .right-background{
+    width: 62%;
+    height: 100%;
+    background-image: url("../img/about-5.jpg");
+    background-position: center;
+    background-size: cover;
+}
 
 
 
 
 
-/*************************************  */
+
+
+
+
+
+
+
+/************************************* */
