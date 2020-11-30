@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Colors
+    #121117;
+    #505051;
+    #babdbe;
+    #038483;
+    #51bdbc;
+    #202427;
+    #e4eae6;
+    #6c9b9c;
+    #5c828c;
+    #947474;
+    #1a948f;
+    #5e6063;
+    #097a7c;
+    #24343c;
+    #7ed5d5;
+ */
+.container{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+}
+
+#contact-bar{
+    height: 50px;
+    background-color: #24343c;
+    color: #babdbe;
+    font-weight: 300;
+}
+
+#contact-bar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+#contact-bar .container .contacts{
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact-bar .container .contacts .social-icons-container{
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
