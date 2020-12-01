@@ -54,7 +54,7 @@
                         <div class="right-navbar">
                             <!-- Navbar -->
                             <ul class="nav">
-                                <li v-for="(item, i) in navbar_items" :class="current_navbar_index == i ? 'green-text' : '' " @click="navbar_select(i)">{{item}}</li>
+                                <li v-for="(item, i) in top_navbar_items" :class="top_navbar_index == i ? 'green-text' : '' " @click="top_navbar_select(i)">{{item}}</li>
                             </ul>
 
                             <!-- Login and Get in touch -->
@@ -124,8 +124,6 @@
                 </div>
             </section>
 
-
-
             <!-- About the company Section -->
             <section id="the-company">
 
@@ -138,7 +136,7 @@
                                 About the Network
                             </h5>
                             <h1>
-                                <span>
+                                <span class="color-bg">
                                     The
                                 </span>
                                 Company
@@ -182,6 +180,40 @@
                 </div>
             </section>
 
+            <section id="actions-projects">
+
+                <div class="container">
+
+                    <!-- Titoli sezione -->
+                    <div class="titles">
+                        <h5 class="green-text uppercase">
+                            We do more for Everyone
+                        </h5>
+                        <h1 class="white-text">
+                            Actions & <span class="color-bg">
+                                Projects
+                            </span>
+                        </h1>
+                    </div>
+
+                    <div class="actions-navbar">
+                        <!-- Navbar -->
+                        <ul class="nav">
+                            <li v-for="(item, i) in actions_navbar_items" :class="actions_navbar_index == i ? 'color-bg' : ''" class="uppercase" @click="actions_navbar_select(i)">{{item}}
+                            </li>
+                        </ul
+                    </div>
+
+                    <div class="squares-wrapper">
+                        <div class="square" v-for="(image, i) in squares">
+                            <img :src="squares_img_root_path + image.name" :alt="image.name" class="opacity-5">
+                            <p class="white-text">{{image.text}}</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
 
 
         <!-- Chiusura root -->

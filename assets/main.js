@@ -6,7 +6,9 @@ var app = new Vue({
 
         phone_number: "+1 (305) 1234-5678",
         e_mail: "hello@example.com",
-        navbar_items: [
+
+        top_navbar_index: 0,
+        top_navbar_items: [
             "Home",
             "About",
             "Projects",
@@ -14,14 +16,57 @@ var app = new Vue({
             "Testimonials"
         ],
 
-        current_navbar_index: 0
+        actions_navbar_index: 0,
+        actions_navbar_items:[
+            "All",
+            "Institutional",
+            "Social",
+            "Events",
+            "Innovation",
+            "Enviroment",
+            "Technology"
+        ],
+
+        squares_img_root_path:"./img/squares/",
+        squares:[
+            {
+                name: "project-1.jpg",
+                text: "Academic professional program in social media"
+            },
+            {
+                name: "project-2.jpg",
+                text: "President's speech at the annual meeting"
+            },
+            {
+                name: "project-3.jpg",
+                text: "International business trip in Shangai"
+            },
+            {
+                name: "project-4.jpg",
+                text: "Technology workshop whith education theme"
+            },
+            {
+                name: "project-5.jpg",
+                text: "Donation of clothes and food to the partner NGO"
+            },
+            {
+                name: "project-6.jpg",
+                text: "Confraternization of the procurement team"
+            },
+        ]
 
     },
 
     methods:{
-        navbar_select(i){
-            console.log(i); 
-            return this.current_navbar_index = i;
+
+        top_navbar_select(i){
+            console.log(i);
+            return this.top_navbar_index = i;
+        },
+
+        actions_navbar_select(i){
+            console.log(i);
+            return this.actions_navbar_index = i;
         }
     }
 

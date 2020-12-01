@@ -59,6 +59,15 @@
     color: white;
 }
 
+.color-bg{
+    display: inline-block;
+    height: 100%;
+    background-color: rgba(3,132,131, 0.2);
+    border-radius: 6px;
+    padding: 5px 15px;
+}
+
+
 /************************************* Top Contacts Bar */
 #contact-bar{
     height: 50px;
@@ -284,12 +293,12 @@
     top: calc(100% - 35px);
     /* 50% - metà larghezza dots divider + margini sx e dx */
     left: calc(50% - 75px + 8px);
+    z-index: 1;
 }
 
 .dots-divider span{
     margin: 2px 4px;
 }
-
 
 /************************************* The company*/
 #the-company{
@@ -326,12 +335,7 @@
 }
 
 #the-company .container .about-the-network .infos h1 span{
-    display: inline-block;
-    height: 100%;
-    background-color: rgba(3,132,131, 0.1);
     color: #1a948f;
-    border-radius: 6px;
-    padding: 5px 15px;
 }
 
 #the-company .container .right-background{
@@ -377,10 +381,80 @@
     margin-right: 20px;
 }
 
+/************************************* Actions and Projects*/
+#actions-projects{
+    /* height: 1165px; */
+    background-color: #121117;
+    padding: 135px 0 190px 0;
+}
 
+#actions-projects .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#actions-projects .container .titles{
+    width: 50%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
 
+#actions-projects .container .titles h1{
+    font-size: 48px;
+    font-weight: 800;
+}
 
+#actions-projects .container .actions-navbar{
+    width: 100%;
+}
 
+#actions-projects .container .actions-navbar .nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    color: white;
+}
+
+#actions-projects .container .actions-navbar .nav li{
+    padding: 10px;
+    cursor: pointer;
+}
+
+#actions-projects .container .squares-wrapper{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#actions-projects .container .squares-wrapper .square{
+    max-width: 360px;
+    max-height: 360px;
+    border-radius: 10px;
+    margin: 7px;
+    position: relative;
+}
+
+#actions-projects .container .squares-wrapper .square img{
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+
+#actions-projects .container .squares-wrapper .square p{
+    width: 320px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: calc(50% - 160px);
+}
 
 /************************************* */
