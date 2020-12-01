@@ -41,6 +41,10 @@
     color: white;
 }
 
+.grey-text{
+    color: grey;
+}
+
 .button{
     text-transform: uppercase;
     padding: 0 25px;
@@ -383,7 +387,6 @@
 
 /************************************* Actions and Projects*/
 #actions-projects{
-    /* height: 1165px; */
     background-color: #121117;
     padding: 135px 0 190px 0;
 }
@@ -437,7 +440,7 @@
     max-width: 360px;
     max-height: 360px;
     border-radius: 10px;
-    margin: 7px;
+    margin: 10px;
     position: relative;
 }
 
@@ -457,4 +460,80 @@
     left: calc(50% - 160px);
 }
 
-/************************************* */
+/************************************* Process Management*/
+#process-management{
+    height: 725px;
+    padding-top: 135px;
+    padding-bottom: 170px;
+}
+
+#process-management .container{
+    width: 78%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#process-management .container .titles{
+    text-align: center;
+    width: 52%;
+    margin-bottom: 60px;
+}
+
+#process-management .container .titles h1{
+    font-size: 48px;
+    font-weight: 800;
+    color: #24343c;
+    margin: 30px 0;
+}
+
+#process-management .container .titles p{
+    line-height: 24px;
+}
+
+#process-management .container .processes-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#process-management .container .processes-wrapper .process{
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#process-management .container .processes-wrapper .process .number{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    display: flex;
+    background-color: rgba(3,132,131, 0.2);
+    color: #1a948f;
+
+}
+
+#process-management .container .processes-wrapper .process .number span{
+    margin: auto;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+
+
+
+/*************************************  Trusted feedback */
+#trusted-feedback{
+    height: 780px;
+    background-color: #eef4ed;
+}
+
+/*************************************  Footer */
+footer{
+    height: 850px;
+    background-color: #121117;
+}
