@@ -48,6 +48,7 @@
     border-radius: 5px;
     border: none;
     font-size: 16px;
+    font-weight: 600;
     border: 1px solid #1a948f;
     background: none;
     cursor: pointer;
@@ -55,6 +56,7 @@
 
 .green-button{
     background-color: #1a948f;
+    color: white;
 }
 
 /************************************* Top Contacts Bar */
@@ -225,6 +227,7 @@
 #cards{
     height: 605px;
     background-color: #eef4ed;
+    position: relative;
 }
 
 #cards .container{
@@ -268,9 +271,30 @@
     color: grey;
 }
 
+/************************************* Dots divider*/
+.dots-divider{
+    width: 150px;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 9px;
+    color: rgba(3,132,131, 0.3);
+    position: absolute;
+    top: calc(100% - 35px);
+    /* 50% - metà larghezza dots divider + margini sx e dx */
+    left: calc(50% - 75px + 8px);
+}
+
+.dots-divider span{
+    margin: 2px 4px;
+}
+
+
 /************************************* The company*/
 #the-company{
     height: 770px;
+    position: relative;
 }
 
 #the-company .container{
@@ -289,11 +313,26 @@
 #the-company .container .about-the-network .infos{
     height: 500px;
     margin: auto;
+    padding-right: 70px;
     display: flex;
     flex-direction: column;
 }
 
+#the-company .container .about-the-network .infos h1{
+    font-size: 48px;
+    font-weight: 800;
+    color: #24343c;
+    margin: 30px 0;
+}
 
+#the-company .container .about-the-network .infos h1 span{
+    display: inline-block;
+    height: 100%;
+    background-color: rgba(3,132,131, 0.1);
+    color: #1a948f;
+    border-radius: 6px;
+    padding: 5px 15px;
+}
 
 #the-company .container .right-background{
     width: 62%;
@@ -303,10 +342,40 @@
     background-size: cover;
 }
 
+#the-company .container .about-the-network .infos p{
+    color: grey;
+    line-height: 24px;
+}
 
+#the-company .container .about-the-network .infos .company-numbers{
+    display: flex;
+    height: 165px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
 
+#the-company .container .about-the-network .infos .company-numbers .num-card{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-between;
+}
 
+#the-company .container .about-the-network .infos .company-numbers .num-card span{
+    font-size: 42px;
+    font-weight: 700;
+    color: #1a948f;
+    padding-left: 20px;
+}
 
+#the-company .container .about-the-network .infos .company-numbers .num-card p{
+    width: 80%;
+    line-height: 24px;
+}
+
+#the-company .container .about-the-network .infos .buttons-container .green-button{
+    margin-right: 20px;
+}
 
 
 
