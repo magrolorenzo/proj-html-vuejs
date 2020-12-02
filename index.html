@@ -335,9 +335,93 @@
             <!-- Footer -->
             <footer>
                 <div class="container">
-                    
+
+                    <!-- Parte sinistra del footer -->
+                    <div class="left-footer">
+                        <div class="titles">
+                            <h5 class="green-text uppercase">
+                                Senda a message
+                            </h5>
+                            <h1 class="white-text">
+                                Get in
+                                <span class="color-bg">
+                                    Touch
+                                </span>
+                            </h1>
+                            <p>
+                                We will responde to your message as soon as possible.
+                            </p>
+                        </div>
+                        <div class="footer-form">
+                            <form>
+                                <input type="text" name="name" placeholder="Name" class="form-input white-text">
+                                <input type="text" name="email" placeholder="Email" class="form-input white-text">
+                                <input type="text" name="phone" placeholder="Phone" class="form-input white-text">
+                                <select name="message-type" class="form-input grey-text">
+                                    <option value="more-infos">More Infos</option>
+                                    <option value="support">Support</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <textarea rows="100" cols="100" wrap="phisical" name="message" placeholder="Message" class="form-textarea white-text">
+                                </textarea>
+                                <button type="button" name="button"  class="button green-button">Send</button>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <!-- Parte destra del footer -->
+                    <div class="right-footer">
+                        
+                        <h2 class="white-text">
+                            Example Inc.
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+
+                        <div class="contact-infos">
+                            <div class="contact">
+                                <div class="icon-container color-bg">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <span>
+                                    {{phone_number}}
+                                </span>
+                            </div>
+                            <div class="contact">
+                                <div class="icon-container color-bg">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <span>
+                                    {{e_mail}}
+                                </span>
+                            </div>
+                            <div class="contact">
+                                <div class="icon-container color-bg">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <span>
+                                    {{address}}
+                                </span>
+                            </div>
+                        </div>
+
+                        <button type="button" name="button" class="button white-text">
+                            View Map
+                        </button>
+                    </div>
+
                 </div>
             </footer>
+
+
+            <div class="black-div">
+
+            </div>
 
         <!-- Chiusura root -->
         </div>

@@ -6,6 +6,7 @@ var app = new Vue({
 
         phone_number: "+1 (305) 1234-5678",
         e_mail: "hello@example.com",
+        address: "Main Avenue, 987",
 
         top_navbar_index: 0,
         top_navbar_items: [
