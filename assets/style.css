@@ -56,10 +56,22 @@
     border: 1px solid #1a948f;
     background: none;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover{
+    background-color: rgba(255,255,255, 0.8);
+    color: #24343c;
 }
 
 .green-button{
     background-color: #1a948f;
+    color: white;
+    transition: 0.3s;
+}
+
+.green-button:hover{
+    background-color: rgb(27,54,55);
     color: white;
 }
 
@@ -91,6 +103,10 @@
     width: 480px;
     display: flex;
     justify-content: space-between;
+}
+
+#contact-bar .container .contacts span{
+    cursor: pointer;
 }
 
 #contact-bar .container .contacts .social-icons-container{
@@ -131,7 +147,6 @@
 }
 
 #jumbotron .navbar .container{
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -146,6 +161,7 @@
     height: 100%;
     font-size: 20px;
     letter-spacing: 3px;
+    cursor: pointer;
 }
 
 #jumbotron .navbar .container .left-navbar .nex{
@@ -175,6 +191,11 @@
 
 #jumbotron .navbar .container .right-navbar .nav li{
     cursor: pointer;
+    transition: 0.3s;
+}
+
+#jumbotron .navbar .container .right-navbar .nav li:hover{
+    color: #1a948f;
 }
 
 #jumbotron .navbar .container .right-navbar .get-in-touch{
@@ -184,7 +205,12 @@
     width: 27%;
 }
 
+#jumbotron .navbar .container .right-navbar .get-in-touch i{
+    cursor: pointer;
+}
+
 /* Main section */
+
 #jumbotron .main-section{
     height: 780px;
 }
@@ -258,6 +284,12 @@
     flex-direction: column;
     justify-content: space-between;
     border-radius: 10px;
+    transition: 0.4s;
+}
+
+#cards .container .card:hover{
+    transform: scale(1.1);
+    box-shadow:  0 8px 20px 4px lightgrey;
 }
 
 #cards .container .card .icon-container{
@@ -321,6 +353,7 @@
     width: 38%;
     height: 100%;
     display: flex;
+
 }
 
 #the-company .container .about-the-network .infos{
@@ -428,6 +461,12 @@
 #actions-projects .container .actions-navbar .nav li{
     padding: 10px;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+#actions-projects .container .actions-navbar .nav li:hover{
+    background-color: rgba(3,132,131, 0.4);
+    border-radius: 6px;
 }
 
 #actions-projects .container .squares-wrapper{
@@ -442,12 +481,20 @@
     border-radius: 10px;
     margin: 10px;
     position: relative;
+    overflow: hidden;
 }
 
 #actions-projects .container .squares-wrapper .square img{
     width: 100%;
     border-radius: 10px;
     opacity: 0.5;
+    transition: 0.5s;
+}
+
+#actions-projects .container .squares-wrapper .square img:hover{
+    transform: scale(1.2);
+    filter: blur(5px);
+    object-fit: scale-down;
 }
 
 #actions-projects .container .squares-wrapper .square p{
@@ -518,6 +565,11 @@
     flex-direction: column;
     align-items: center;
     z-index: 1;
+    transition: 0.3s;
+}
+
+#process-management .container .processes-wrapper .process:hover{
+    transform: scale(1.1);
 }
 
 #process-management .container .processes-wrapper .process .number{
@@ -586,7 +638,14 @@
     justify-content: space-between;
     border-radius: 10px;
     position: relative;
+    transition: 0.3s;
 }
+
+#trusted-feedback .container .cards-wrapper .card:hover{
+    transform: scale(1.1);
+    box-shadow:  0 8px 20px 4px lightgrey;
+}
+
 
 #trusted-feedback .container .cards-wrapper .card::after{
     content: "\f10e";
@@ -704,7 +763,6 @@ footer .container .right-footer p{
 footer .container .right-footer .contact-infos{
     margin-top: 40px;
     margin-bottom: 25px;
-
 }
 
 footer .container .right-footer .contact-infos .contact{
@@ -714,6 +772,12 @@ footer .container .right-footer .contact-infos .contact{
     align-items: center;
     font-size: 17px;
     color: #1a948f;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer .container .right-footer .contact-infos .contact:hover{
+    color: white;
 }
 
 footer .container .right-footer .contact-infos  .contact .icon-container{
@@ -726,16 +790,4 @@ footer .container .right-footer .contact-infos  .contact .icon-container{
 
 footer .container .right-footer .contact-infos .contact .icon-container i{
     margin: auto;
-}
-
-
-
-
-
-
-
-/*************************************  Black div*/
-.black-div{
-    height: 45px;
-    background-color: black;
 }
