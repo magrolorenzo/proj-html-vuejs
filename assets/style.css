@@ -550,16 +550,68 @@
     background-color: #eef4ed;
 }
 
+#trusted-feedback .container .titles{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
 
+#trusted-feedback .container .titles h1{
+    font-size: 48px;
+    font-weight: 800;
+    color: #24343c;
+    margin: 30px 0;
+}
 
+#trusted-feedback .container .titles p{
+    width: 100%;
+    line-height: 24px;
+}
 
+#trusted-feedback .container .cards-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
 
+#trusted-feedback .container .cards-wrapper .card{
+    width: 360px;
+    padding: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    position: relative;
+}
 
+#trusted-feedback .container .cards-wrapper .card::after{
+    content: "\f10e";
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    position: absolute;
+    top: calc(100% -  60px);
+    left: calc(100% -  50px);
+    color: lightgrey;
+    font-size: 24px;
+}
 
+#trusted-feedback .container .cards-wrapper .card .logo-container{
+    max-width: 115px;
+    margin-bottom: 10px;
+}
 
+#trusted-feedback .container .cards-wrapper .card .logo-container img{
+    width: 100%;
+}
 
-
-
+#trusted-feedback .container .cards-wrapper .card p{
+    line-height: 24px;
+    margin: 5px 0;
+}
 
 /*************************************  Footer */
 footer{

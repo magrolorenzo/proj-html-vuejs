@@ -53,6 +53,22 @@ var app = new Vue({
                 name: "project-6.jpg",
                 text: "Confraternization of the procurement team"
             },
+        ],
+
+        customers_folder: "./img/customers/",
+        customers_logos:[
+            {
+                name: "Woocommerce",
+                logo_path: "logo-1.png"
+            },
+            {
+                name: "Wordpress",
+                logo_path: "logo-2.png"
+            },
+            {
+                name: "Pingdom",
+                logo_path: "logo-3.png"
+            }
         ]
 
     },

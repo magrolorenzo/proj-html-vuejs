@@ -180,6 +180,7 @@
                 </div>
             </section>
 
+            <!-- Actions & projects -->
             <section id="actions-projects">
 
                 <div class="container">
@@ -215,6 +216,7 @@
 
             </section>
 
+            <!-- Process Management -->
             <section id="process-management">
                 <div class="container">
                     <div class="titles">
@@ -300,13 +302,40 @@
             <section id="trusted-feedback">
                 <div class="container">
 
+                    <div class="titles">
+                        <h5 class="green-text uppercase">Customer testimonials</h5>
+                        <h1>
+                            Trusted
+                            <span class="color-bg green-text">
+                                Feedback
+                            </span>
+                        </h1>
+                        <p class="grey-text">
+                            We work intesively in search of ideals that can add up in the lives of our customers. This is what moves us and we are grateful for the recognition.
+                        </p>
+                    </div>
+
+                    <div class="cards-wrapper">
+
+                        <div class="card" v-for="customer in customers_logos">
+                            <div class="logo-container">
+                                <img :src="customers_folder + customer.logo_path" :alt="customer.name">
+                            </div>
+                            <p class="grey-text">
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <p class="grey-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <!-- Footer -->
             <footer>
                 <div class="container">
-
+                    
                 </div>
             </footer>
 
