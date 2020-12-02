@@ -116,6 +116,14 @@
     align-items: center;
 }
 
+#contact-bar .container .contacts .social-icons-container span{
+    padding: 0 8px;
+    transition: 0.3s;
+}
+
+#contact-bar .container .contacts .social-icons-container span:hover{
+    transform: scale(1.5);
+}
 /************************************* Jumbotron */
 #jumbotron{
     height: 865px;
@@ -162,6 +170,11 @@
     font-size: 20px;
     letter-spacing: 3px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+#jumbotron .navbar .container .left-navbar:hover{
+    transform: scale(1.2);
 }
 
 #jumbotron .navbar .container .left-navbar .nex{
@@ -192,6 +205,7 @@
 #jumbotron .navbar .container .right-navbar .nav li{
     cursor: pointer;
     transition: 0.3s;
+    line-height: 40px;
 }
 
 #jumbotron .navbar .container .right-navbar .nav li:hover{
@@ -400,6 +414,11 @@
     display: flex;
     flex-direction: column;
     justify-content:  space-between;
+    transition: 0.3s;
+}
+
+#the-company .container .about-the-network .infos .company-numbers .num-card:hover{
+    transform: scale(1.1);
 }
 
 #the-company .container .about-the-network .infos .company-numbers .num-card span{
