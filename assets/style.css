@@ -462,14 +462,13 @@
 
 /************************************* Process Management*/
 #process-management{
-    height: 725px;
     padding-top: 135px;
     padding-bottom: 170px;
+    position: relative;
 }
 
 #process-management .container{
     width: 78%;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -478,7 +477,7 @@
 #process-management .container .titles{
     text-align: center;
     width: 52%;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 #process-management .container .titles h1{
@@ -497,21 +496,38 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
+
+}
+
+#process-management .container .processes-wrapper::after{
+    content: "";
+    display: block;
+    width: 100vW;
+    max-width: 100%;
+    height: 5px;
+    background-color: rgba(205,230,230);
+    position: absolute;
+    top: 397px;
+    left: 0;
+    z-index: ;
 }
 
 #process-management .container .processes-wrapper .process{
-    width: 220px;
+    width: 240px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1;
 }
+
 #process-management .container .processes-wrapper .process .number{
     width: 45px;
     height: 45px;
     border-radius: 50%;
     margin-bottom: 30px;
     display: flex;
-    background-color: rgba(3,132,131, 0.2);
+    /* background-color: rgba(3,132,131, 0.2); */
+    background-color: rgba(205,230,230);
     color: #1a948f;
 
 }
@@ -522,15 +538,28 @@
     font-weight: 800;
 }
 
-
-
-
+#process-management .container .processes-wrapper .process h2{
+    margin-bottom: 25px;
+    color: #24343c;
+}
 
 /*************************************  Trusted feedback */
 #trusted-feedback{
     height: 780px;
+    padding: 135px 0;
     background-color: #eef4ed;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /*************************************  Footer */
 footer{
